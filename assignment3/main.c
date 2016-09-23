@@ -1,3 +1,10 @@
+/*
+Johnson, Matthew
+EID: mdj857
+Unique Number: 16290
+EE 312 Assignment 3
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

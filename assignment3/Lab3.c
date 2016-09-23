@@ -1,3 +1,9 @@
+/*
+Johnson, Matthew
+EID: mdj857
+Unique Number: 16290
+EE 312 Assignment 3
+*/
 #include <stdio.h>
 #define LOWER_CASE_ASCII_SHIFT 97
 #define UPPER_CASE_ASCII_SHIFT 65

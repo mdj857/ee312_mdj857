@@ -13,11 +13,11 @@ EE 312 Assignment 2
 #define POUNDS_TO_KG .45359237	
 #define KG_TO_POUNDS 2.20462262	// = 1/(POUNDS_TO_KG)
 
-/*
-Function: round_to_nearest_int
-Inputs: Double d
-Output: An integer with value of input rounded to nearest whole number.
-*/
+/********************************************************************
+ Function: round_to_nearest_int
+ Inputs: double
+ Output: An integer with value of input rounded to nearest whole number.
+*********************************************************************/
 int round_to_nearest_int(double d) {
 	if ((int)(d + 0.5) > (int) d) {		
 		return (int)(d + 0.5);			// round up 
@@ -79,7 +79,7 @@ int main(void) {
 			double USD = Euro1*EURtoUSD;								// raw conversion
 			int US_Dollar1 = (USD * 100) / 100;							// calculates whole dollars
 			int US_Cents1 = ((int)(USD * 100)) % 100;					// calculates cents as integer type
-			printf("USD value is $%d.%d\n", US_Dollar1, US_Cents1);
+			printf("USD value is $%d %d\n", US_Dollar1, US_Cents1);
 		}
 		if (input == 5) {
 			printf("Enter temperature in Fahrenheit:\n");

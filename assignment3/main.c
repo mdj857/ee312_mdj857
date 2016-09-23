@@ -92,7 +92,6 @@ void testStage2(void) {
 }
 
 char secret[] = "EE312 with Dr. Barber is fun!";
-
 void testStage3(void) {
 	int key;
 	int common;

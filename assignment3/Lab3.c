@@ -115,7 +115,7 @@ int maxIndex(int myArray[], int arrayLength){
  */
 void encrypt(char message[], int messageLength, int shift) {
 	for (int i = 0; i < messageLength; i++) {
-			if (isLowerCase(message[i])) {
+			if (isLowerCase(message[i])) {			// use lower case ascii shift 
 				message[i] = (message[i] + shift - LOWER_CASE_ASCII_SHIFT) % 26 + LOWER_CASE_ASCII_SHIFT;
 			}
 			else if(isUpperCase(message[i])) {
@@ -139,29 +139,28 @@ int mostFrequentLetter(char message[], int messageLength) {
 * Decrypts Message
 */
 void decrypt(char cypher[],int cypherLength, int common) {
-	int mostFrequentCypher = mostFrequentLetter(cypher, cypherLength);
+	int freq[26] = { 0 };						// create frequency histogram
+	buildHistogram(cypher, cypherLength, freq, 26);
+	int maxLetters[26] = { 0 };					// to store letters that tie as most appearing in encrypted message 
+	int maxFreq = maxIndex(freq, 26);			// contains max index of frequency histogram
+	for (int i = 0; i < 26; i++) {
+		if (freq[i] == freq[maxFreq]) {
+			maxLetters[i]++;					// builds array of "tied" max letters 
+		}
+	}
+	int max;	// max index of encrypted message
+	for (int j = 0; j < cypherLength; j++) {	// cycle through encrypted message
+		for (int k = 0; k < 26; k++) {			// cycle through MaxLetters array and see if cypher[j] is in maxLetters 
+			if (maxLetters[k] >= 1 && ((cypher[j] == int2LowerCase(k)) || (cypher[j] == int2UpperCase(k))))  {
+				max = k;
+				j = k = 100;					// if first letter is found, break out of both loops
+				break;
+			}	
+		}
 
-	
+	}
 
-	// max index stuff 
-	//int max = -1;
-	//int maxIndex = 0;
-	//for (int i = 0; i < 26; i++) {
-		//if (histo[i] > max) {
-			//maxIndex = i;		// new index of max
-			//max = histo[i];		// new max value
-		//}
-		//else if (histo[i] == max){		// case of two or more max appearing chars 
-			//for (int j = 0; i < cypherLength; i++) {	// need to look for first instance of max char 
-
-			//}
-		//}
-	//}
-	 
-
-
-
-	int shiftToDecode = (common - mostFrequentCypher + 26) % 26;	 
+	int shiftToDecode = (common - max + 26) % 26;	
 	encrypt(cypher, cypherLength, shiftToDecode);
 	
 

@@ -7,7 +7,5 @@ c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment3\main.c(54): warnin
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
 c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment3\main.c(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-  Lab3.c
-  Generating Code...
   assignment3.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment3\Debug\assignment3.exe
   assignment3.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment3\Debug\assignment3.pdb (Full PDB)

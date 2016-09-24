@@ -111,7 +111,6 @@ void testStage3(void) {
 	decrypt(secret, strlen(secret),common);
 	printf("%s\n", secret);
 }
-char s[] = "RR312 With Dr. Barber is fun!";
 int main(void) {
 	testStage1();
 	getchar();

@@ -1,0 +1,27 @@
+stuff; 
+stuff2; 
+stuff3;
+void fillArray()
+{
+/*;;;;;;;;;;*/
+;
+Printf(";;;");
+}
+
+int function2(int a)
+{
+hi; 
+}
+// weenisssssssss;
+void woohoo(int a, int b)
+{
+int a; 
+printff("hello;;;;");
+}
+int method(int a)
+{
+;
+{
+;
+}
+EOF

@@ -116,9 +116,8 @@ int main(void) {
 	getchar();
 	testStage2();
 	getchar(); 
-	while (1) {
-		testStage3();
-		getchar();
+	testStage3();
+	getchar();
 	}
 }
 

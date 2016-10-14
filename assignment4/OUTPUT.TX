@@ -1,0 +1,11 @@
+File Counting Summary Table
+Filename: EXAMPLE.TXT
+
+fillArray	 2
+function2	 1
+woohoo	 2
+method	 2
+
+Total Functions: 4
+
+Total Lines: 7

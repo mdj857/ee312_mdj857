@@ -15,7 +15,6 @@ EE 312 Assignment 4
 
 
 /*GLOBALS*/
-char clear_array[100] = { '\0' };	// array used to clear line1 and line 2 arrays 
 char outputFile[5000] = "File Counting Summary Table\nFilename: ";		// string to be placed in file and displayed on stdout after exection
 int numFuncs = 0;					//  total number of functions in input file 
 int total_lines = 0;				// total number of input lines in input file 
@@ -27,21 +26,33 @@ void appendTable(char functionName[], int lines);
 
 
 int main() {
-	char  inputFile[MAX_FILE_LEN];
-		printf("Please enter a file to be processed. Enter STOP to end execution. \n\n");
-		scanf("%s", inputFile);
-		while (strcmp(inputFile, "STOP") != 0) {
+	while (1) {
+		char  inputFile[MAX_FILE_LEN];
+		int nullFlag = 1;
+
 		FILE *fp = fopen(inputFile, "r+");		// opens read-only input file 
-		if (fp == NULL) {
-			printf("Uhhh...something's wrong. Try another file name.");
-		}
+		do {
+			printf("Please enter a file to be processed. Enter \"STOP\" to end execution.\n");
+			scanf("%s", inputFile);
+			if (strcmp(inputFile, "STOP") == 0) {
+				exit();
+			}
+			fp = fopen(inputFile, "r+");
+			if (fp == NULL) {
+				nullFlag = 1;
+				printf("Uhhh...something's wrong. Try another file name.\n");
+			}
+			else {
+				nullFlag = 0;
+			}
+		} while (nullFlag);
 		strcat(inputFile, "\n\n");
 		strcat(outputFile, inputFile);
 		char line1[MAX_STR_LEN];
 		char line2[MAX_STR_LEN];
 		// looks for first function
 		fgets(line1, 500, fp);
-		while (strcmp(line1, "EOF\n") != 0) {
+		while (!feof(fp)) {
 			if (strcmp(line1, BEGIN_FCN) != 0) {
 				memcpy(line2, line1, 500);
 				fgets(line1, 500, fp);
@@ -85,7 +96,7 @@ int main() {
 		sprintf(totlines, "%d\n", total_lines);
 		strcat(outputFile, "\nTotal Functions: ");
 		strcat(outputFile, totfunc);
-		strcat(outputFile, "\nTotal Lines: ");
+		strcat(outputFile, "Total Lines: ");
 		strcat(outputFile, totlines);
 		printf("%s", outputFile);				// prints to stdout 
 		while (fputs(outputFile, fpOut) == 'EOF') {
@@ -93,10 +104,10 @@ int main() {
 			scanf("%s", outputFilename);
 		}
 		fclose(fpOut);			// close output stream 
-	}
-	}
-	
 
+
+	}
+}
 // finds number of SLOC in a given function
 int findSemicolons(char func[]) {
 	int i = 0;
@@ -135,7 +146,7 @@ void getFunctionName(char funcHeader[], char functionName[]){
 		}
 		i++;
 	}
-	for (int k = startLet; k < endLet; k++) {
+	for (int k = startLet; k < endLet; k++) {		// fill string for function name 
 		functionName[ind] = funcHeader[k];
 		ind++;
 	}

@@ -1,11 +1,8 @@
 File Counting Summary Table
-Filename: EXAMPLE.TXT
+Filename: example.txt
 
-fillArray	 2
-function2	 1
-woohoo	 2
-method	 2
+aFunc	 4
+bFunc	 2
 
-Total Functions: 4
-
-Total Lines: 7
+Total Functions: 2
+Total Lines: 6

@@ -1,0 +1,5 @@
+﻿  assignment-6.c
+c:\users\matt johnson\desktop\assignment-6.c(25): warning C4133: '=': incompatible types - from 'char *' to 'long *'
+c:\users\matt johnson\desktop\assignment-6.c(38): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+  assignment6.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment6\Debug\assignment6.exe
+  assignment6.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment6\Debug\assignment6.pdb (Full PDB)

@@ -1,0 +1,23 @@
+﻿  assignment-6.c
+c:\users\matt johnson\desktop\assignment-6.c(24): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+c:\users\matt johnson\desktop\assignment-6.c(26): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+c:\users\matt johnson\desktop\assignment-6.c(36): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+c:\users\matt johnson\desktop\assignment-6.c(36): warning C4133: '=': incompatible types - from 'int *' to '__int64 *'
+c:\users\matt johnson\desktop\assignment-6.c(42): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+c:\users\matt johnson\desktop\assignment-6.c(48): warning C4133: '=': incompatible types - from 'int *' to '__int64 *'
+c:\users\matt johnson\desktop\assignment-6.c(20): warning C4133: 'initializing': incompatible types - from 'char *' to '__int64 *'
+c:\users\matt johnson\desktop\assignment-6.c(28): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+  c:\users\matt johnson\desktop\assignment-6.c(28): note: consider using '%lld' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(28): note: consider using '%Id' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(28): note: consider using '%I64d' in the format string
+c:\users\matt johnson\desktop\assignment-6.c(31): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+c:\users\matt johnson\desktop\assignment-6.c(46): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+  c:\users\matt johnson\desktop\assignment-6.c(46): note: consider using '%lld' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(46): note: consider using '%Id' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(46): note: consider using '%I64d' in the format string
+c:\users\matt johnson\desktop\assignment-6.c(50): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+  c:\users\matt johnson\desktop\assignment-6.c(50): note: consider using '%lld' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(50): note: consider using '%Id' in the format string
+  c:\users\matt johnson\desktop\assignment-6.c(50): note: consider using '%I64d' in the format string
+  assignment6.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment6\x64\Debug\assignment6.exe
+  assignment6.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment6\x64\Debug\assignment6.pdb (Full PDB)

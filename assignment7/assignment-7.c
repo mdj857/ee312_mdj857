@@ -3,7 +3,7 @@
 #pragma warning(disable:4996)
 
 void privateFunction(int n, int left, int right, int position);
-int privateFunc(char str[], int posS1, int posS2);
+int privateFunc(char str[], int pos1, int arrayIndex);
 int isPalindrome(char str[], int beginning, int end);
 
 

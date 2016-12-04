@@ -1,3 +1,12 @@
 ﻿  main.c
+  assignment-7.c
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(49): warning C4020: 'privateFunc': too many actual parameters
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(53): warning C4042: 'str': has bad storage class
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(56): warning C4018: '>': signed/unsigned mismatch
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(58): warning C4033: 'privateFunc' must return a value
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(66): warning C4033: 'privateFunc' must return a value
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(68): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+c:\users\matt johnson\desktop\ee 312\ee312_mdj857\assignment7\assignment-7.c(82): warning C4715: 'privateFunc': not all control paths return a value
   assignment7.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment7\Debug\assignment7.exe
   assignment7.vcxproj -> C:\Users\Matt Johnson\Desktop\EE 312\ee312_mdj857\assignment7\Debug\assignment7.pdb (Full PDB)
